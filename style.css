@@ -456,6 +456,7 @@ body {
     width: 24px;
     height: 24px;
     cursor: pointer;
+    margin-left: 170px;
 }
 
 .menu-icon span {
@@ -1873,4 +1874,5 @@ section:not(.hero) {
 
 ::-webkit-scrollbar-thumb:hover {
     background: var(--accent-primary);
+
 }
