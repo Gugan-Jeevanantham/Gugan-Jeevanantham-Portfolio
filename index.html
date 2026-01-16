@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gugan J | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile-fix.css">
+</head>
+<body class="dark-mode">
+    
+    <!-- Bubbles Background -->
+    <div class="bubbles">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+    
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <div class="logo-circle">
+                    <div class="logo-inner">
+                        <span class="logo-text">GJ</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="loading-text-wrapper">
+                <h2 class="loading-text">
+                    <span class="char" style="--i:1">L</span>
+                    <span class="char" style="--i:2">O</span>
+                    <span class="char" style="--i:3">A</span>
+                    <span class="char" style="--i:4">D</span>
+                    <span class="char" style="--i:5">I</span>
+                    <span class="char" style="--i:6">N</span>
+                    <span class="char" style="--i:7">G</span>
+                    <span class="char" style="--i:8">.</span>
+                    <span class="char" style="--i:9">.</span>
+                    <span class="char" style="--i:10">.</span>
+                </h2>
+                <p class="loading-subtext">Crafting Digital Excellence</p>
+            </div>
+            
+            <div class="loading-progress">
+                <div class="progress-track">
+                    <div class="progress-fill"></div>
+                </div>
+                <div class="progress-text">0%</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top portfolio-nav">
+        <div class="container-fluid px-lg-5 px-3">
+            <!-- Logo -->
+            <a class="navbar-brand" href="">
+                <div class="logo-container">
+                    <div class="logo-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="logo-text-wrapper">
+                        <span class="logo-text">GUGAN</span>
+                        <span class="logo-subtext">SOFTWARE ENGINEER</span>
+                    </div>
+                </div>
+            </a>
+            
+            <!-- Theme Toggle -->
+            <div class="nav-controls">
+                <div class="mode-toggle">
+                    <button id="themeToggle" class="theme-btn">
+                        <div class="theme-icon">
+                            <i class="fas fa-moon moon-icon"></i>
+                            <i class="fas fa-sun sun-icon"></i>
+                        </div>
+                        <span class="theme-text">Dark Mode</span>
+                    </button>
+                </div>
+                
+                <!-- Mobile Toggle -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                    <span class="menu-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>
+            </div>
+            
+            <!-- Navigation Menu -->
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link nav-animate active" href="#home">
+                            <i class="fas fa-home"></i>
+                            <span>HOME</span>
+                            <div class="nav-underline"></div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-animate" href="#skills">
+                            <i class="fas fa-cogs"></i>
+                            <span>SKILLS</span>
+                            <div class="nav-underline"></div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-animate" href="#experience">
+                            <i class="fas fa-briefcase"></i>
+                            <span>EXPERIENCE</span>
+                            <div class="nav-underline"></div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-animate" href="#projects">
+                            <i class="fas fa-project-diagram"></i>
+                            <span>PROJECTS</span>
+                            <div class="nav-underline"></div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-animate" href="#contact">
+                            <i class="fas fa-envelope"></i>
+                            <span>CONTACT</span>
+                            <div class="nav-underline"></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container-fluid px-lg-5 px-3">
+            <div class="row align-items-center justify-content-between hero-row">
+                <!-- Left Column - Text Content -->
+                <div class="col-lg-7 col-md-12 hero-text-wrapper order-1 order-lg-1" data-aos="fade-right" data-aos-delay="100">
+                    <div class="greeting-wrapper">
+                        <h3 class="greeting">
+                            <span class="wave">👋</span>
+                            <span class="text">Hello, I'm</span>
+                        </h3>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        GUGAN J
+                    </h1>
+                    
+                    <h2 class="hero-subtitle">
+                        Associate Software Engineer
+                    </h2>
+                    
+                    <div class="hero-description">
+                        <p>Designing and developing <span class="highlight">scalable ERP solutions</span> with 3+ years of experience in <span class="highlight">Enterprise </span> application. Specialized in building secure, <span class="highlight">high-performance </span> web applications for business-critical systems. Skilled in <span class="highlight">JavaScript</span>, <span class="highlight">jQuery</span>, <span class="highlight">Angular</span>, and performance-optimized 
+                            <span class="highlight">SQL</span> for scalable enterprise systems. Focused on <span class="highlight">Clean Architecture, Responsive UI, </span> and 
+                            <span class="highlight">Reliable System </span> performance.</p>
+                    </div>
+                    
+                    <div class="hero-cta">
+                        <a href="Gugan Resume.pdf" target="_blank" class="cta-btn primary-btn" id="hireBtn">
+                            <span class="btn-text">View Resume</span>
+                            <span class="btn-icon">
+                                <i class="fa fa-download"></i>
+                            </span>
+                        </a>
+                        <a href="#projects" class="cta-btn secondary-btn" id="projectsBtn">
+                            <span class="btn-text">View Projects</span>
+                            <span class="btn-icon">
+                                <i class="fas fa-arrow-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="3">3+</div>
+                            <div class="stat-label">YEARS EXPERIENCE</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="20">20+</div>
+                            <div class="stat-label">PROJECTS</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="15">15+</div>
+                            <div class="stat-label">HAPPY CLIENTS</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Column - Image -->
+                <div class="col-lg-5 col-md-12 hero-image-wrapper order-2 order-lg-2" data-aos="fade-left" data-aos-delay="200">
+                    <div class="image-container">
+                        <div class="profile-image">
+                            <img src="Gugan-J.jpeg" alt="Gugan J" class="main-img">
+                             <!-- <img src="Gugan-J.jpeg" alt="Gugan J" class="main-img" style="width: 100%; max-width: 800px; height: auto;"> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="scroll-text">SCROLL DOWN</div>
+        </div> -->
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-label">
+                    <span>EXPERTISE</span>
+                </div>
+                <h2 class="section-title">
+                    TECHNICAL <span class="highlight">SKILLS</span>
+                </h2>
+                <p class="section-subtitle">
+                    Technologies I excel at and continuously master
+                </p>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-category-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-shimmer"></div>
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <i class="fab fa-html5 html-icon"></i>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="95"></div>
+                            </div>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <i class="fab fa-css3-alt css-icon"></i>
+                                <span>CSS3</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="90"></div>
+                            </div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <i class="fab fa-js-square js-icon"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="85"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <i class="devicon-jquery-plain jquery-icon"></i>
+                                <span>jQuery</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="90"></div>
+                            </div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-shimmer"></div>
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Frameworks</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <i class="fab fa-react react-icon"></i>
+                                <span>React.js</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="80"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <i class="fab fa-angular angular-icon"></i>
+                                <span>Angular</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="75"></div>
+                            </div>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <i class="fab fa-bootstrap bootstrap-icon"></i>
+                                <span>Bootstrap</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="90"></div>
+                            </div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <div class="kendo-logo">
+                                    <span>K</span>
+                                </div>
+                                <span>Kendo UI</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="80"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-shimmer"></div>
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Database / Tools</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <i class="fas fa-database mysql-icon"></i>
+                                <span>MySQL</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="85"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <i class="fas fa-server sql-icon"></i>
+                                <span>SQL Server</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="80"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <i class="fas fa-code-branch git-icon"></i>
+                                <span>Git/GitHub</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="85"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <i class="devicon-vscode-plain vscode-icon"></i>
+                                <span>VS Code</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="95"></div>
+                            </div>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills Cloud -->
+            <div class="skills-cloud" data-aos="fade-up" data-aos-delay="400">
+                <div class="cloud-item">Front-End Development</div>
+                <div class="cloud-item">Real-time Production Support</div>
+                <div class="cloud-item">Debugging</div>
+                <div class="cloud-item">Unit Testing</div>
+                <div class="cloud-item">Performance Optimization</div>
+                <div class="cloud-item">SQL Query Optimization</div>
+                <div class="cloud-item">Problem Solving</div>
+                <div class="cloud-item">SDLC</div>
+                <div class="cloud-item">Data Migration</div>
+                <div class="cloud-item">MS Office</div>
+                <div class="cloud-item">Code Review</div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-label">
+                    <span>JOURNEY</span>
+                </div>
+                <h2 class="section-title">
+                    WORK <span class="highlight">EXPERIENCE</span>
+                </h2>
+                <p class="section-subtitle">
+                    My professional growth and career milestones
+                </p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-marker">
+                        <div class="marker-circle"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-title">
+                                <h3>Trainee</h3>
+                                <span class="company">ERP Systems Trainee</span>
+                            </div>
+                            <div class="timeline-period">
+                                <span class="period">MAY 2022 - SEP 2022</span>
+                            </div>
+                        </div>
+                        <div class="timeline-body">
+                          <ul>
+                            <li>Trained in HTML, CSS, JavaScript, SQL, and ERP application development using real project modules.</li>
+                            <li>Assisted senior developers in building Billing, Labour, and Tax Invoice screens for ERP systems.</li>
+                            <li>Performed UI testing, data validation, and bug fixing under supervision.</li>
+                            <li>Learned SDLC process, requirement analysis, and basic production support activities.</li>
+                            <li>Supported database operations including simple queries, reports, and data verification.</li>
+                          </ul>
+                          <br>
+                            <div class="timeline-tags">
+                                <span class="tag">Learning</span>
+                                <span class="tag">ERP Basics</span>
+                                <span class="tag">Debugging</span>
+                                <span class="tag">Unit Testing</span>
+                                <span class="tag">UI Development</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-marker">
+                        <div class="marker-circle"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-title">
+                                <h3>Programmer Analyst</h3>
+                                <span class="company">Application Development & Support - ERP</span>
+                            </div>
+                            <div class="timeline-period">
+                                <span class="period">OCT 2022 - MAR 2024</span>
+                            </div>
+                        </div>
+                        <div class="timeline-body">
+                            <ul>
+                            <li>Developed and maintained ERP modules for Project Management, Billing, and Approval Workflows.</li>
+                            <li>Implemented business logic, UI validations, and GST-compliant tax calculations.</li>
+                            <li>Worked with SQL queries and stored procedures to manage large project and billing data.</li>
+                            <li>Handled client-reported issues and provided timely production support.</li>
+                            <li>Collaborated with QA and business teams to deliver stable and user-friendly ERP screens.</li>
+                          </ul>
+                          <br>
+                            <div class="timeline-tags">
+                                <span class="tag">Debugging</span>
+                                <span class="tag">UI Development</span>
+                                <span class="tag">UAT Handle</span>
+                                <span class="tag">SQL Optimization</span>
+                                <span class="tag">Production Support</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-marker">
+                        <div class="marker-circle"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-title">
+                                <h3>Associate Software Engineer</h3>
+                                <span class="company">Application Development & Support - ERP</span>
+                            </div>
+                            <div class="timeline-period">
+                                <span class="period">APR 2024 - SEP 2025</span>
+                            </div>
+                        </div>
+                        <div class="timeline-body">
+                            <ul>
+                            <li>Designed and optimized ERP project management, billing, labour, and tax invoice modules.</li>
+                            <li>Built dynamic Kendo UI grids, tree views, and Excel export features for large datasets.</li>
+                            <li>Improved UI performance and optimized dashboards handling 10,000+ records.</li>
+                            <li>Integrated REST APIs and implemented multi-level validation and approval workflows.</li>
+                            <li>Delivered production support, fixed critical issues, and supported Agile releases.</li>
+                          </ul>
+                          <br>
+                            <div class="timeline-tags">
+                                <span class="tag">SDLC</span>
+                                <span class="tag">Production Support</span>
+                                <span class="tag">Scalable Solutions</span>
+                                <span class="tag">API Integration</span>
+                                <span class="tag">Performance Tuned</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-label">
+                    <span>PORTFOLIO</span>
+                </div>
+                <h2 class="section-title">
+                    FEATURED <span class="highlight">PROJECTS</span>
+                </h2>
+                <p class="section-subtitle">
+                    Showcasing my best work and solutions
+                </p>
+            </div>
+            
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                <!-- Main Project - ERP Management System -->
+                <div class="project-card main-project" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-badge">Flagship</div>
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <button class="view-btn">
+                                <i class="fas fa-external-link-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">ERP Software</div>
+                        <h3 class="project-title">Construction Information Management System (CIMS)</h3>
+                        <p class="project-description">Module: Project Management</p>
+                        <p class="project-description">Construction Information Management System (CIMS) is an enterprise ERP application used to manage construction projects, billing, labour, and approvals. The system helps organizations track project execution, financials, workforce, and compliance through a centralized web platform.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">jQuery</span>
+                            <span class="tech-tag">SQL Server</span>
+                            <span class="tech-tag">Angular</span>
+                        </div>
+                        <button class="view-more-btn" onclick="openModal('PROJECT MANAGEMENT - ASE', 'The Construction Information Management System (CIMS) is an ERP web application used to manage construction projects and operational activities. I worked on the Project Management module, developing billing, tax invoice, labour, and approval workflow screens. The system allows users to handle project finances, workforce data, and approvals through a centralized interface. I built Kendo UI grids and tree views to display project data in a structured format. Excel export features were implemented to support business reporting. Role-based validations and approval flows were added to control user actions. SQL queries and UI performance were optimized to handle large volumes of data efficiently.', 'https://www.tactivesoft.com/construction-project-management-software/')">
+                            <span>View More</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Side Projects -->
+                <div class="side-projects">
+                    <!-- Project 1 -->
+                    <div class="project-card side-project" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-icon">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <div class="project-content">
+                            <h4 class="project-title">Quiz Application</h4>
+                            <p class="project-description">Interactive quiz app with timer, scoring and dynamic questions.</p>
+                            <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                            <button class="project-btn" onclick="openModal('Quiz Application', 'Interactive quiz application with timer, scoring, dynamic questions and result summary built using JavaScript.', 'https://github.com/yourquiz')">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2 -->
+                    <div class="project-card side-project" data-aos="fade-up" data-aos-delay="250">
+                        <div class="project-icon">
+                            <i class="fas fa-sign-in-alt"></i>
+                        </div>
+                        <div class="project-content">
+                            <h4 class="project-title">Secure Login</h4>
+                            <p class="project-description">Browser-based secure login system with session management.</p>
+                            <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Bootstrap</span>
+                        </div>
+                            <button class="project-btn" onclick="openModal('SECURE LOGIN DETAILS', 'The Secure Login System is a frontend-based web application designed to manage user authentication and access control. Users can register and log in through a secure login form with input validation. After successful login, the system redirects the user to a protected dashboard. The dashboard displays user-specific information and is accessible only when the user session is active. Session-based authentication is used to maintain the login state across pages. Unauthorized users are automatically redirected back to the login page. The application also provides a logout option to securely end the session. This project demonstrates secure frontend authentication logic, session handling, and protected page navigation.', 'https://gugan-jeevanantham.github.io/Securelogin/')">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 3 -->
+                    <div class="project-card side-project" data-aos="fade-up" data-aos-delay="300">
+                        <div class="project-icon">
+                            <i class="fa fa-briefcase"></i>
+                        </div>
+                        <div class="project-content">
+                            <h4 class="project-title">Portfolio Website</h4>
+                            <p class="project-description">Personal portfolio with responsive design and project showcase.</p>
+                            <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Bootstrap</span>
+                        </div>
+                            <button class="project-btn" onclick="openModal('PORTFOLIO WEBSITE DETAILS', 'The Personal Portfolio Website is a responsive web application designed to showcase professional skills, projects, and work experience. It provides a clean and structured layout to present technical expertise and career information. The website includes dedicated sections for projects, skills, experience, and contact details. Interactive navigation and smooth scrolling improve the user experience across all pages. The portfolio highlights real project work and technical capabilities in a visually engaging format. It is optimized for both desktop and mobile devices. This project demonstrates frontend design, layout structuring, and user-focused web presentation.', 'https://gugan-jeevanantham.github.io/GuganPortfolio/')">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="section-label">
+                    <span>CONNECT</span>
+                </div>
+                <h2 class="section-title">
+                    GET IN <span class="highlight">TOUCH</span>
+                </h2>
+                <p class="section-subtitle">
+                    Let's discuss your project and create something amazing
+                </p>
+            </div>
+            
+            <div class="contact-wrapper">
+                <!-- Contact Info -->
+                <div class="contact-info" data-aos="fade-right" data-aos-delay="100">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fa fa-child"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Let's Talk</h4>
+                            <p>Say Hello, Buddy 👋👋</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Email</h4>
+                            <p>guganjeevanantham987@email.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Phone</h4>
+                            <p>+91 99447 17243</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Location</h4>
+                            <p>Namakkal, Tamilnadu, India</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper" data-aos="fade-left" data-aos-delay="200">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" required>
+                            <label for="name">Your Name</label>
+                            <div class="underline"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" required>
+                            <label for="email">Your Email</label>
+                            <div class="underline"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" id="subject" required>
+                            <label for="subject">Subject</label>
+                            <div class="underline"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" required></textarea>
+                            <label for="message">Your Message</label>
+                            <div class="underline"></div>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Social Links - Moved to bottom -->
+            <div class="contact-social-bottom" data-aos="fade-up" data-aos-delay="300">
+                <a href="https://www.linkedin.com/in/j-gugan-jeevanantham" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:guganjeevanantham987@gmail.com" target="_blank" class="social-link">
+                    <i class="fa fa-envelope"></i>
+                </a>
+                <a href="https://github.com/Gugan-Jeevanantham" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://wa.me/9944717243?text=Hi%20Gugan%2C%20I'm%20interested%20in%20discussing%20a%20job%20opportunity%20with%20you." target="_blank" class="social-link">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://www.instagram.com/gugan_jeevanantham" target="_blank" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-copyright">
+                    <p>© 2025 Gugan J. All rights reserved.</p>
+                    <p class="footer-note">Built with <i class="fas fa-heart"></i> and passion for coding</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+    
+    <!-- Modal -->
+    <div id="projectModal" class="modal-overlay" onclick="closeModal()">
+        <div class="modal-box" onclick="event.stopPropagation()">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDesc"></p>
+            <div class="modal-actions">
+                <a id="modalLink" href="#" target="_blank" class="btn">View Project</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+    <script src="mobile-fix.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "YO4ZxhXygM8r7sbBq",
+        });
+    })();
+    </script>
+
+
+</body>
+</html>
