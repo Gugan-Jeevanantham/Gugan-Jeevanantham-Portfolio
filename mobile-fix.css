@@ -326,13 +326,17 @@
         height: 300px;
     }
     
-    .timeline::before {
-        left: 20px;
+    .timeline::before { display: none; }
+    .timeline-content { 
+        width: 95% !important; 
+        margin: 15px auto !important;
     }
-    
-    .timeline-marker {
-        left: 20px;
+    .timeline-marker { 
+        top: 0; 
+        left: 50% !important; 
+        transform: translateX(-50%) !important; 
     }
+
     
     .timeline-content {
         width: calc(100% - 60px);
@@ -385,6 +389,15 @@
     .info-icon {
         margin: 0 auto;
     }
+    .hero-stats {
+        justify-content: center !important;
+        text-align: center !important;
+    }
+    
+    .stat-item {
+        text-align: center !important;
+    }
+
 }
 
 /* For very small mobile devices */
