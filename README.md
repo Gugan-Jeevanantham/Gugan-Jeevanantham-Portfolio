@@ -33,8 +33,9 @@ A modern, responsive personal portfolio website featuring both Dark and Light mo
 - **Core Competencies**: Real-time Production Support, Debugging, Performance Optimization
 
 ### 3. Work Experience Timeline
-- **Trainee** (May 2022 – Sep 2022) at RRP Systems
-- **Programmer Analyst** (Oct 2022 – Mar 2024) - Application Development & Support
+- **Trainee** (May 2022 – Sep 2022) at ERP Systems
+- **Programmer Analyst** (Oct 2022 – Mar 2024) - Application Development & Support - ERP
+- **Associate Software Engineer** (Apr 2024 – Sep 2025) - Application Development & Support - ERP
 - Detailed responsibilities and achievements
 - Skills tags for each role
 
